@@ -44,7 +44,7 @@ function changeTheme(themeName) {
 function createFallingItem() {
 const item = document.createElement('div');
 item.className = 'falling-item';
-const items = ['🍫', '❤️', '✨', '💝', '💖'];
+const items = ['🫦', '❤️', '✨', '💝', '💖'];
 item.innerHTML = items[Math.floor(Math.random() * items.length)];
 item.style.left = Math.random() * 100 + 'vw';
 item.style.fontSize = (Math.random() * 20 + 15) + 'px';
@@ -84,4 +84,5 @@ banner.classList.add('hidden');
 setTimeout(() => {
     message.classList.add('show');
 }, 1000);
+
 });
